@@ -1,2 +1,4 @@
 # audio_transcriber
 Transcribe audios using whisper
+
+This vibe coded project is a fully offline Portuguese speech-to-text system built around faster-whisper and NVIDIA CUDA. It provides a simple push-to-talk microphone interface that records audio directly into memory, transcribes it locally using the Whisper large-v3-turbo model on an NVIDIA GPU, and saves timestamped Portuguese transcriptions as text files without sending audio or transcripts to any external service. The repository also includes a setup script that creates the Python virtual environment and installs the required system, Python, and CUDA runtime dependencies, plus a launcher script that activates the environment, configures the required CUDA libraries, and starts the transcriber. It can also be used with existing audio files such as WebM recordings, making it a small, self-hosted transcription toolkit for Linux.
